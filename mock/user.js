@@ -26,7 +26,7 @@ const users = {
 export default [
   // user login
   {
-    url: '/user/login',
+    url: '/auth/login',
     type: 'post',
     response: config => {
       const { username } = config.body
@@ -72,7 +72,7 @@ export default [
 
   // user logout
   {
-    url: '/user/logout',
+    url: '/auth/logout',
     type: 'post',
     response: _ => {
       return {
